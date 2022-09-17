@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgba(107, 255, 93, 0.651); /* comentário assim no css */
+            color: rgb(0, 0, 0); 
+            font: normal 20pt Arial;
+        }
+        h1{
+           color: deeppink; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p> <!--Isso é um comentário no html-->
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) // string
+        var n2 = Number(window.prompt('Digite outro número: ')) // string
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é ${soma}`) // concatenação
+        // number + number para adição
+        // string + string  para concatenação
+    </script>
+</body>
+</html>

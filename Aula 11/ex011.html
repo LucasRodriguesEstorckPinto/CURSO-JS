@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DO EX 009</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            background-color:rgb(206, 201, 203) ;
+        } input{
+            width: 100px;
+            font: normal 18pt Arial;
+        } 
+    </style>
+</head>
+<body>
+    <h1>ESTRANGEIRO OU BRASILEIRO?</h1>
+    Você é de qual país? <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Conferir" onclick="conferir()" >
+    <div id = "res"></div>
+    <script>
+    function conferir(){
+        var nacionalidade = document.getElementById('nacionalidade').value.toUpperCase()
+        var res = document.getElementById('res')
+        if (nacionalidade == 'BRASIL' || nacionalidade == 'BR'){
+            res.innerHTML = '<p><strong>BRASILEIRO</strong></p>'
+        }else {
+            res.innerHTML = '<p><strong>ESTRANGEIRO</strong></p>'
+        }
+    }
+    </script>
+</body>
+</html>
